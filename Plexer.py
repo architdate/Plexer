@@ -1,6 +1,11 @@
 import os
 import sys
 
+result = ""
+final_epi=""
+dir_listing = []
+base_listing = []
+
 os.system("cls")
 print("Specify First Split Point")
 first_split = str(input())
@@ -14,8 +19,6 @@ print("Specify Series Name")
 series_name = str(input())
 
 os.system("cls")
-result = ""
-dir_listing = []
 print("Specify Path (Be sure to escape special characters!!)")
 dir_listing.append(input())
 while result != "N" or result != "n":
@@ -28,15 +31,12 @@ while result != "N" or result != "n":
 	else:
 		break
 
-final_epi=""
 os.system("cls")
 if len(dir_listing) == 1:
 	print("Specify final episode")
 	final_epi = int(input())
 
 os.system("cls")
-result = ""
-base_listing = []
 base_listing.append(0)
 os.system("cls")
 print("Specify where to cut the episodes")
